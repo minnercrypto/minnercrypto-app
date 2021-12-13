@@ -2,9 +2,14 @@ signupForm.addEventListener("submit", async event => {
   event.preventDefault();
 
   try {
-    const { email, password } = getSignupFormInfo();
-    await signup(email, password);
-    location = "./dash/next.html";
+    var response = grecaptcha.getResponse();
+    if(response.lenght != 0) {
+      const { email, password } = getSignupFormInfo();
+      await signup(email, password);
+      location = "./dash/next.html";
+    } else {
+      alert('¡Compruebe que no es un robot!');
+    }
   } catch (ex) {
     alert("An error ocurred trying to signup: " + ex.message);
   } finally {
