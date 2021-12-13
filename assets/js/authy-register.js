@@ -4,7 +4,7 @@ signupForm.addEventListener("submit", async event => {
   try {
     const { email, password } = getSignupFormInfo();
     await signup(email, password);
-    location = "../complements/next.html";
+    location = "../dash/next.html";
   } catch (ex) {
     alert("An error ocurred trying to signup: " + ex.message);
   } finally {
