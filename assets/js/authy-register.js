@@ -1,39 +1,12 @@
 signupForm.addEventListener("submit", async event => {
   event.preventDefault();
 
-  const alertMessage = document.getElementById('alertLogin');
-  const username = signupForm["signup-username"];
-  const email = signupForm["signup-email"];
-  const password = signupForm["signup-password"];
-  const referralCode = signupForm["signup-referral"];
-
   try {
-    if (username.value.length==0 || email.value.length==0 || password.value.length==0 || referralCode.value.length==0) {
-      const html = `<div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <span class="alert-icon"><i class="fas fa-exclamation-triangle"></i></span>
-      <span class="alert-text"><strong> ¡Hey! -</strong> Debe de rellenar todos los campos requeridos.</span>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span>
-      </button>
-    </div>
-    `;
-    alertMessage.innerHTML = html;
-    } else {
-      const { email, password } = getSignupFormInfo();
-      await signup(email, password);
-      location = '../dash/next.html';
-    }
+    const { email, password } = getSignupFormInfo();
+    await signup(email, password);
+    location = "../complements/next.html";
   } catch (ex) {
-    const html = `
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-      <span class="alert-icon"><i class="ni ni-support-16"></i></span>
-      <span class="alert-text"><strong>¡Oh no! -</strong> ${ex.message}</span>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    `;
-    alertMessage.innerHTML = html;
+    alert("An error ocurred trying to signup: " + ex.message);
   } finally {
   }
 });

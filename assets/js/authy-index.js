@@ -4,20 +4,10 @@ signupForm.addEventListener("submit", async event => {
   try {
     const { email, password } = getSignupFormInfo();
     await signup(email, password);
-    location = './dash/next.html';
   } catch (ex) {
-    const alertCatch = document.getElementById('alertLogin');
-    const html = `
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-      <span class="alert-icon"><i class="ni ni-support-16"></i></span>
-      <span class="alert-text"><strong>¡Oh no! -</strong> ${ex.message}</span>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    `;
-    alertCatch.innerHTML = html;
+    alert("An error ocurred trying to signup: " + ex.message);
   } finally {
+    location = "./complements/dashboard.html";
   }
 });
 
