@@ -57,7 +57,6 @@ async function setupUI(user) {
     numberPlanId.innerHTML = numberPlan;
     cicleDay.innerHTML = day;
   } else {
-    alert("Please, login to enjoy our quotes!");
   }
 }
 

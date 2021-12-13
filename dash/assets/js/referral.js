@@ -57,7 +57,6 @@ async function setupUI(user) {
     referral.innerHTML = userCollection.referral;
     referralActive.innerHTML = userCollection.referralActive;
   } else {
-    alert("Please, login to enjoy our quotes!");
   }
 }
 
