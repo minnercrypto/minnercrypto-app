@@ -32,6 +32,8 @@ async function signup(email, password) {
       balance: "0.00",
       investment: "0.00",
       referral: "0",
+      referralActive: "0",
+      numberPlan: "0"
     });
 }
 

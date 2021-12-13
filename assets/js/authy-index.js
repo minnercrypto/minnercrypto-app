@@ -4,10 +4,10 @@ signupForm.addEventListener("submit", async event => {
   try {
     const { email, password } = getSignupFormInfo();
     await signup(email, password);
+    location = "./complements/next.html";
   } catch (ex) {
     alert("An error ocurred trying to signup: " + ex.message);
   } finally {
-    location = "./complements/dashboard.html";
   }
 });
 
@@ -32,6 +32,8 @@ async function signup(email, password) {
       balance: "0.00",
       investment: "0.00",
       referral: "0",
+      referralActive: "0",
+      numberPlan: "0"
     });
 }
 
