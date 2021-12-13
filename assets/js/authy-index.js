@@ -33,7 +33,8 @@ async function signup(email, password) {
       investment: "0.00",
       referral: "0",
       referralActive: "0",
-      numberPlan: "0"
+      numberPlan: "0",
+      day: "0"
     });
 }
 
