@@ -1,7 +1,6 @@
 var firebaseConfig = {
   apiKey: "AIzaSyA7TglVggnyZ5a_rVEMPiuqnK3JesTGjic",
   authDomain: "currency-market-miner.firebaseapp.com",
-  databaseURL: "https://minnercryptopage-864ee-default-rtdb.firebaseio.com",
   projectId: "currency-market-miner",
   storageBucket: "currency-market-miner.appspot.com",
   messagingSenderId: "170574948592",
