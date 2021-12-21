@@ -203,16 +203,43 @@
           </div>
           <div class="row mt-3">
             <div class="col-6">
-              <a href="#" class="text-light"><small>¿Se te olvidó tu contraseña?</small></a>
+              <a href="#" class="text-default" data-toggle="modal" data-target="#modalForgotPASS"><small>¿Se te olvidó tu contraseña?</small></a>
             </div>
             <div class="col-6 text-right">
-              <a href="../index.html#signupModal" class="text-light"><small>Crear una nueva cuenta</small></a>
+              <a href="../index.html#signupModal" class="text-default"><small>Crear una nueva cuenta</small></a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+    <!-- Modal -->
+  <div class="modal fade" id="modalForgotPASS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div id="alert-forgot"></div>
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">¿Se te olvidó tu contraseña?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <label for="mail">Coloca tu correo electrónico a continuación:</label> <br>
+          <div class="input-group input-group-alternative">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+            </div>
+            <input type="email" id="mail" name="mail" required class="form-control" placeholder="Email...">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="resetPassword">Recuperar</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <footer class="footer">
     <div class="container">
       <div class="row row-grid align-items-center mb-5">
@@ -278,6 +305,7 @@
   <script src="../assets/js/utils/definitions.js"></script>
   <script src="../assets/js/authy-login.js"></script>
   <script src="../assets/js/ob-re-in.js"></script>
+  <script src="../assets/js/reset.js"></script>
 </body>
 
 </html>
