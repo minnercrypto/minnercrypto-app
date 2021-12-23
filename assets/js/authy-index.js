@@ -29,12 +29,14 @@ async function signup(email, password) {
       password: signupForm["signup-password"].value,
       referralCode: signupForm["signup-referral"].value,
       role: "native",
-      balance: "0.00",
-      investment: "0.00",
-      referral: "0",
-      referralActive: "0",
-      numberPlan: "0",
-      day: "0"
+      balance: 0.00,
+      investment: 0.00,
+      referral: 0,
+      referralActive: 0,
+      numberPlan: 0,
+      day: "0",
+      date: 00/00/00,
+      plan: "Sin Planes"
     });
 }
 

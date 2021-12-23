@@ -6,7 +6,7 @@ function observador(){
     console.log(user);
     // ...
   } else {
-    console.log('No existe usuario activo');
+    location = '../com/login.html'
     // ...
   }
 });

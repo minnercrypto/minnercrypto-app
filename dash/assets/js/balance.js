@@ -33,6 +33,11 @@ function verificar(){
   });
 }
 
+const balanceBTC = document.getElementById('balanceBTC');
+const investmentBTC = document.getElementById('investment-btc');
+const timeActive = document.getElementById('time-active');
+const planeId = document.getElementById('plane');
+var priceBTC = 48363.60;
 const idUser = document.getElementById('idUser');
 const balanceId = document.getElementById("balance");
 const investmentId = document.getElementById("investment");
@@ -51,7 +56,14 @@ async function setupUI(user) {
     const investment = `<sup>$</sup>${userCollection.investment}`;
     const numberPlan = `${userCollection.numberPlan}`;
     const day = `${userCollection.day}/15`;
-
+    var balanceUSDBTC = userCollection.balance / priceBTC;
+    var montBalance = balanceUSDBTC.toFixed(8); 
+    balanceBTC.innerHTML = montBalance;
+    var conInvestmentBTC = userCollection.investment / priceBTC;
+    var montInvestment = conInvestmentBTC.toFixed(8); 
+    investmentBTC.innerHTML = montInvestment;
+    planeId.innerHTML = userCollection.plan;
+    timeActive.innerHTML = userCollection.date;
     balanceId.innerHTML = balance;
     investmentId.innerHTML = investment;
     numberPlanId.innerHTML = numberPlan;
