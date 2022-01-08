@@ -21,10 +21,11 @@
   <!-- Page plugins -->
   <!-- Argon CSS -->
   <link rel="stylesheet" href="./assets/css/argon.css?v=1.2.0" type="text/css">
+  <link rel="stylesheet" href="./assets/css/style-pre.css" type="text/css">
   <!-- Smartsupp Live Chat script -->
   <script type="text/javascript">
     var _smartsupp = _smartsupp || {};
-    _smartsupp.key = 'b2b20ebbc237cbceb780552cc3e7d43825aa0554';
+    _smartsupp.key = 'ee470a665454deccb48cfcdcaecb8338ac60672a';
     window.smartsupp||(function(d) {
       var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
       s=d.getElementsByTagName('script')[0];c=d.createElement('script');
@@ -32,8 +33,6 @@
       c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
     })(document);
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3121712238360105"
-  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -223,24 +222,66 @@
     </div>
     <!-- Page content -->
     <div class="container-fluid mt--6">
-      <div class="row">
+      <div class="row" id="plan-active">
         <div class="col-xl-12">
-          <div class="card">
-            <div class="card-header border-0">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3 class="mb-0">Premios Actuales</h3>
+            <div class="card bg-default">
+              <div class="card-header bg-transparent">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <h6 class="text-light text-uppercase ls-1 mb-1">Premios</h6>
+                    <h5 class="h3 text-white mb-0 ">Participe en los premios disponibles</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="row" style="display: none;" id="reward-one">
+                <div class="cards-price row justify-content-center">
+                    <div class="card-price col-sm">
+                      <div class="title-price">
+                      <i class="ni ni-trophy text-yellow fach"></i>
+                      <h2>Sorteo de 1BTC - Enero 2022</h2>
+                      </div>
+                      <div class="price-card">
+                        <h4 style="font-size: 1rem; margin-top: -1vh;">¡Gane ahora 50k dólares norteamericanos!</h4>
+                        <h4 style="font-size: 0.8rem; color:black">Fecha limite para participar 04/01/2022 a las 12:00H</h4>
+                      </div>
+                      <div class="option-price">
+
+                      </div>
+                      <button type="button" data-toggle="modal" data-target="#reward-on" class="btn-card-pre" href="">Participar Ahora</button>
+                    </div>
+                </div>
+                <div class="modal fade" id="reward-on" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
+                  <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                    <div class="modal-content bg-gradient-default">
+                      <div class="modal-header">
+                        <h6 class="modal-title" id="modal-title-notification">Instrucciones del Sorteo</h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="py-3 text-center">
+                          <img src="../assets/img/now-logo-ext-white.png" alt="" style="width:80%">
+                          <h4 class="heading mt-4">Para participar en el sorteo debe enviar la siguiente información:</h4>
+                          <ul class="text-left">
+                            <li>Nombres</li>
+                            <li>Apellidos</li>
+                            <li>Cédula de Identidad</li>
+                            <li>Correo Electrónico</li>
+                            <li>Número Telefónico</li>
+                            <li>Mensaje para la empresa</li>
+                          </ul> </br>
+                          <h2 class="tittle text-white"><i class="ni ni-email-83"></i> Enviar a: </br> contact@minnercrypto.com</h2>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="table-responsive text-center">
-              <!-- Projects table -->
-              <div style="font-size: 6rem; margin: 8rem;">
-                <i class="ni ni-trophy"></i>
-                <h3 class="mb-0">Aún no ha ganado nada</h3>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <!-- Footer -->
@@ -287,7 +328,7 @@
   <script src="./assets/js/config/firebase.config.js"></script>
   <script src="./assets/js/utils/definitions.js"></script>
   <script src="./assets/js/argon.js?v=1.2.0"></script>
-  <script src="./assets/js/balance.js"></script>
+  <script src="./assets/js/reward.js"></script>
 </body>
 
 </html>

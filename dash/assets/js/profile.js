@@ -2,9 +2,7 @@ function observador(){
   firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     console.log('Existe usuario activo');
-    const uid = user.uid;
-    console.log(user);
-    let editStatus = false;
+    var uid = user.uid;
 
 const updateTask = (updatedTask) => db.collection('users').doc(uid).update(updatedTask);
 
