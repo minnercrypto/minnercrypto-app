@@ -7392,7 +7392,7 @@ button.bg-default:focus {
 }
 
 .bg-white {
-  background-color: #222222 !important;
+  background: linear-gradient(326deg, #ff3d00, #ffc300);
 }
 
 a.bg-white:hover,
@@ -17840,6 +17840,7 @@ a.text-lighter:focus {
 
 [class*="btn-outline-"] {
   border-width: 1px;
+  margin: 1vw;
 }
 
 .btn-outline-secondary {
@@ -19685,7 +19686,7 @@ textarea[resize="horizontal"] {
 @media (max-width: 991.98px) {
   .navbar-nav .nav-link {
     padding: .625rem 0;
-    color: #172b4d !important;
+    color: white !important;
   }
 
   .navbar-nav .dropdown-menu {
@@ -19756,7 +19757,7 @@ textarea[resize="horizontal"] {
   .navbar-collapse.show {
     padding: 1.5rem;
     border-radius: 0.25rem;
-    background: #FFF;
+    background: #222222;
     box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1), 0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
     animation: show-navbar-collapse .2s ease forwards;
   }

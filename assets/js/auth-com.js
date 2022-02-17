@@ -32,7 +32,7 @@ function observador(){
       <a href="../dash/dashboard.html" class="btn btn-primary btn-icon">
         <span class="btn-inner--icon">
         </span>
-        <span class="nav-link-inner--text">Volver al Tablero</span>
+        <span class="nav-link-inner--text">Volver a la cuenta</span>
       </a>
     </li>
     `;
