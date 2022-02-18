@@ -461,6 +461,7 @@ small,
 .small {
   font-size: 80%;
   font-weight: 400;
+  color: white;
 }
 
 mark,
@@ -2642,14 +2643,14 @@ fieldset:disabled a.btn {
   color: #fff;
   border-color: rgb(255,182,0);
   background: rgb(255,182,0);
-  background: linear-gradient(90deg, rgba(255,182,0,1) 0%, rgba(255,57,0,1) 100%);
+  background: rgb(255,182,0);
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background: rgba(255, 183, 0, 0.726);
-  background: linear-gradient(90deg, rgba(255, 183, 0, 0.384) 0%, rgba(255,57,0,1) 100%);
+  color: rgb(255,182,0);
+  background: rgb(255,182,0);
+  background: white;
 }
 
 .btn-primary:focus,
@@ -3108,15 +3109,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: rgb(255,182,0);
-  border-color: rgb(255,182,0);
+  color: white;
+  background: transparent;
+  border-color: white;
 }
 
 .btn-outline-primary:hover {
-  color: #fff;
-  background: rgba(255, 183, 0, 0.726);
-  background: linear-gradient(90deg, rgba(255, 183, 0, 0.384) 0%, rgba(255,57,0,1) 100%);
-  border-color: rgb(255,182,0);
+  color: rgb(255,182,0);
+  background: white;
+  border-color: white;
 }
 
 .btn-outline-primary:focus,
@@ -17840,7 +17841,6 @@ a.text-lighter:focus {
 
 [class*="btn-outline-"] {
   border-width: 1px;
-  margin: 1vw;
 }
 
 .btn-outline-secondary {
@@ -20374,7 +20374,7 @@ textarea[resize="horizontal"] {
 
 .section {
   position: relative;
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 4rem;
 }
 
