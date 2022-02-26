@@ -1,11 +1,11 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyA7TglVggnyZ5a_rVEMPiuqnK3JesTGjic",
-  authDomain: "currency-market-miner.firebaseapp.com",
-  projectId: "currency-market-miner",
-  storageBucket: "currency-market-miner.appspot.com",
-  messagingSenderId: "170574948592",
-  appId: "1:170574948592:web:69e368c2c82646d3313a35",
-  measurementId: "G-T6EVM8BCWE"
+  apiKey: "AIzaSyD6ZSirsHNwWbjSjKqyWqzfPOZZZihy43U",
+  authDomain: "minnercrypto-official.firebaseapp.com",
+  projectId: "minnercrypto-official",
+  storageBucket: "minnercrypto-official.appspot.com",
+  messagingSenderId: "267365619729",
+  appId: "1:267365619729:web:a19a28c54972de423b79b0",
+  measurementId: "G-8847SS0V0T"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
